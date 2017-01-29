@@ -6,7 +6,7 @@
 name: Nick Smith
 
 # Short bio or description (displayed in the header)
-description: Software Developer focusing on releasing tested, secure, quality code quickly.
+description: Software Developer focused on releasing tested, secure, quality code quickly.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://www.gravatar.com/avatar/11a3de34ea23c7d2c3ce6a7563087814?s=64&d=identicon&r=PG&f=1
@@ -23,7 +23,7 @@ footer-links:
   flickr:
   github: clickthisnick
   instagram:
-  linkedin: https://www.linkedin.com/in/clickthisnick/
+  linkedin: clickthisnick
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter:

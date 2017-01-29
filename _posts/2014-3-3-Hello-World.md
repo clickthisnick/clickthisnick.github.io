@@ -1,9 +1,10 @@
 ---
 layout: post
 title: New Website
+permalink: /blog/
 ---
 
-Hey guys I have a new website! 
+Hey guys I have a new website!
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
 
