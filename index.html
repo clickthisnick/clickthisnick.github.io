@@ -1,22 +1,340 @@
 ---
-layout: page
+layout: default
 title: Homepage
 ---
+<link rel="stylesheet" type="text/css" href="lib/css/bootswatch.css">
+<link rel="stylesheet" type="text/css" href="lib/css/clickthisnick.css">
+<link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="lib/css/github-ribbon.css">
+<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-# I Know Software. How Can I Help You?
+<html>
+<head>
+	<title>ClickThisNick - I Know Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-### Website Automation
+<body>
 
-I have served as a test lead for a Fortune 500 Company. I will create reusability and reliability within your test suite, vastly improving the quality.
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-### Vulnerability Testing
+  ga('create', 'UA-69540930-1', 'auto');
+  ga('send', 'pageview');
 
-Using tools like Burp Suite and Zap Proxy I will find holes in your system. My development experience allows me to aid in the fixing of those holes.
+</script>
 
-### Development Experience
+  <nav class="navbar navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
 
-Having experience both being a Front End and a Back End developer allows me to understand where the weak points will be.
+        <div class="visible-xs navbar-brand" href="#"> <br>
+          <i class="fa fa-mouse-pointer"></i> Click This Nick
+        </div>
 
-### Knowledge Transfer
+      <div class="hidden-xs navbar-brand" href="#"> <i class="fa fa-mouse-pointer"></i> Click This Nick</div>
 
-I can tech talk with the developers and talk bottom line with the project managers. I will bridge the knowledge gap between teammates.
+        <button id="collapseButton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <ul class="nav navbar-nav">
+          <li><a class="skills" href="#skills" onclick="collapse()" data-toggle="tab">Skills</a></li>
+          <!--<li><a href="#experience" onclick="collapse()" data-toggle="tab">Experience</a></li>-->
+          <li><a class="blog" onclick="window.location.assign('http://blog.clickthisnick.com')" data-toggle="tab">Blog</a></li>
+          <li><a class="projects" href="#projects" onclick="collapse()" data-toggle="tab">Projects</a></li>
+          <li><a class="resume" href="#resume" onclick="collapse()" data-toggle="tab">Resume</a></li>
+          <li><a class="contactme" href="#contact" onclick="collapse()" data-toggle="tab">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="myTabContent" class="tab-content home-gradient">
+    <hr>
+
+    <div class="tab-pane active in" id="skills">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center title">I Know Software. How Can I Help You?</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3 box ">
+            <div id="automation" class="inbox">
+              <div class="text-center">
+                <h4>Website Automation</h4>
+              </div>
+              <hr>
+              I have served as a test lead for a Fortune 500 Company. I will create reusability and reliability within your test suite, vastly improving the quality.
+            </div>
+        </div>
+        <div class="col-sm-3 box">
+            <div id="vulnerability" class="inbox">
+              <div class="text-center">
+                <h4>Vulnerability Testing</h4>
+              </div>
+              <hr>
+              Using tools like Burp Suite and Zap Proxy I will find holes in your system. My development experience allows me to aid in the fixing of those holes.
+            </div>
+        </div>
+        <div class="col-sm-3 box">
+            <div id="development" class="inbox">
+              <div class="text-center"><h4>Development Experience</h4></div>
+              <hr>
+              Having experience both being a Front End and a Back End developer allows me to understand where the weak points will be.
+            </div>
+        </div>
+        <div class="col-sm-3 box">
+            <div id="knowledge" class="inbox">
+              <div class="text-center"><h4>Knowledge Transfer</h4></div>
+              <hr>
+              I can tech talk with the developers and talk bottom line with the project managers. I will bridge the knowledge gap between teammates.
+            </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 box">
+        <div class="inbox">
+          <div class="text-center">
+
+            <a href="https://github.com/clickthisnick" target="_blank"><i class="fa fa-4x fa-github-square"></i></a>
+
+            <a href="https://www.linkedin.com/in/clickthisnick" target="_blank"><i class="fa fa-4x fa-linkedin-square"></i></a>
+
+            <a href="https://bugcrowd.com/clickthisnick" target="_blank"><i class="fa fa-4x fa-bug"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projects -->
+    <div class="tab-pane" id="projects">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center title">I Create Software Solutions To Solve Real World Problems</h1>
+        </div>
+      </div>
+
+      <div class="row white-row">
+        <div class="col-sm-6">
+          <div class="github-fork-ribbon-wrapper right">
+            <div class="github-fork-ribbon">
+              <a href="https://github.com/clickthisnick/dynamic-release-checklist" target="_blank">Fork me on GitHub</a>
+            </div>
+          </div>
+
+
+          <h4>Dynamic Release Checklist</h4>
+          <img src="images/dynamic-release-checklist.png" class="img-responsive">
+          A release checklist that uses questions to filter out tasks needed to be performed so only relevant tasks are shown. Written in AngularJS and tested with Jamine.
+          <hr>
+        </div>
+
+<div class="col-xs-12 row black-row visible-xs-block"></div>
+
+        <div class="col-sm-6">
+          <div class="github-fork-ribbon-wrapper right">
+            <div class="github-fork-ribbon">
+              <a href="https://github.com/clickthisnick/WorkoutTracker" target="_blank">Fork me on GitHub</a>
+            </div>
+          </div>
+          <div class="text-left">
+            <h4>Workout Tracker</h4>
+          </div>
+          <img src="images/workout-tracker.png" class="img-responsive center-block">
+          Currently a work in progress, workout tracker helps a person record their lifting numbers without the use of paper or pencil. Written in AngularJS, mobile responsive and easy to use.
+          <hr>
+        </div>
+      </div>
+
+      <div class="row black-row"></div>
+
+      <div class="row white-row">
+
+
+        <div class="col-sm-6">
+          <div class="github-fork-ribbon-wrapper right">
+            <div class="github-fork-ribbon">
+              <a href="https://github.com/clickthisnick/CraigLister" target="_blank">Fork me on GitHub</a>
+            </div>
+          </div>
+
+          <h4>CraigLister</h4>
+          <img src="images/craiglister.png" class="img-responsive">
+          Python script using Selenium to navigate the UI and post items on craigslist every 3 days. Uses the Gmail Python library to accept Terms and Conditions, fully automating the posting of CraigList ads.
+          <hr>
+        </div>
+
+<div class="col-xs-12 row black-row visible-xs-block"></div>
+
+        <div class="col-sm-6">
+
+          <div class="github-fork-ribbon-wrapper right">
+            <div class="github-fork-ribbon">
+              <a href="https://github.com/clickthisnick/itinerary" target="_blank">Fork me on GitHub</a>
+            </div>
+          </div>
+
+          <div class="text-left">
+            <h4>Intinerary</h4>
+          </div>
+          <img src="images/itinerary.png" class="img-responsive center-block" width=60%>
+          An intinerary creator. Never be late to an event and never forget something again! Written in KnockoutJS
+          <hr>
+        </div>
+
+      </div>
+
+      <div class="row black-row"></div>
+
+      <div class="row white-row">
+        <div class="col-sm-6">
+         <div class="text-left">
+          <h4>ISU Admirers</h4>
+        </div>
+        <img src="images/isuadmirerers.png" class="img-responsive center-block">
+        Twitter account amassing 20k followers. Users can submit tweets anonymously to the twitter account via a website I built. Tweets submitted with the LAMP stack and parsed/posted to the Twitter API with Python.
+        <hr>
+      </div>
+
+<div class="col-xs-12 row black-row visible-xs-block"></div>
+
+      <div class="col-sm-6">
+        <div class="text-left">
+          <h4>Snake Password</h4>
+        </div>
+        <img src="images/snake.png" class="img-responsive center-block">
+        JavaScript password generator. Builds pseudo-random passwords where the next character in the password is next to the previous character.
+        <hr>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <!-- Projects -->
+
+  <!-- Experience -->
+  <div class="tab-pane" id="experience">
+    <h1>Experience</h1>
+
+    <span>
+
+      <blockquote>
+
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">ITA Group</h3>
+          </div>
+          <div class="panel-body">
+            * Wired up C# Specflow Gherkin integration tests
+            <hr>
+            * Commited code via Git to CI Jenkins repo
+            <hr>
+            * Extended developers C# Unit Test coverage
+          </div>
+        </div>
+
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">Xpanxion</h3>
+          </div>
+          <div class="panel-body">
+            * Automated UI tests in C# with Selenium, Coypu, Xpath, etc.
+            <hr>
+            * Extended functionality of custom automation framework
+            <hr>
+            * Collaborated with devs and BAs during 2 week Agile scrum sprints
+          </div>
+        </div>
+
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h3 class="panel-title">KMJ Performance</h3>
+          </div>
+          <div class="panel-body">
+            * Transitioned e-commerce website from X-Cart to Magento
+            <hr>
+            * Created internal return program to track customer returns
+            <hr>
+            * Developed bulk image/data editing tools in Python
+          </div>
+        </div>
+
+      </blockquote>
+    </span>
+  </div>
+  <!-- Experience -->
+
+
+  <!-- Resume -->
+  <div class="tab-pane" id="resume">
+          <div class="row">
+        <div class="col-xs-12">
+    <h1 class="text-center title">Grab My Resume</h1>
+     <div class="text-center title">
+      <a href="Nicholas.Smith.Resume.pdf" target="_blank" class="btn btn-success btn-lg" download>Download PDF</a>
+    </div>
+
+  </div>
+</div>
+</div>
+  <!-- Resume -->
+
+
+  <!-- Contact Me -->
+  <div class="tab-pane" id="contact">
+          <div class="row">
+        <div class="col-xs-12">
+    <h1 class="text-center title">Contact Me</h1>
+    <h3 class="text-center title">admin@clickthisnick.com</h3>
+  </div>
+</div>
+
+<div class="text-center">
+                <a href="https://github.com/clickthisnick" target="_blank"><i class="fa fa-4x fa-github-square"></i></a>
+
+            <a href="https://www.linkedin.com/in/clickthisnick" target="_blank"><i class="fa fa-4x fa-linkedin-square"></i></a>
+          </div>
+
+  </div>
+  <!-- Contact Me -->
+
+
+
+</body>
+</html>
+
+
+<script src="lib/js/jquery.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="lib/js/jquery.matchheight.js" type="text/javascript"></script>
+
+<script>
+
+function collapse(){
+  var navBar = document.getElementById('collapseButton');
+  if ($(navBar).is(":visible")){
+    navBar.click();
+  }
+}
+
+$(function() {
+  $('.inbox').matchHeight();
+});
+
+</script>
