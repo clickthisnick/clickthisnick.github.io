@@ -1,7 +1,6 @@
 ---
 layout: post
 title: New Website
-permalink: /blog/
 ---
 
 Hey guys I have a new website!
