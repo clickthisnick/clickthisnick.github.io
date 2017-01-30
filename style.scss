@@ -117,7 +117,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $black;
 }
 
 // Specify the color of the selection
@@ -202,7 +202,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $black;
   font-size: 16px;
 
   @include mobile {
