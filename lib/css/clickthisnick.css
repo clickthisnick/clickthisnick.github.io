@@ -36,66 +36,14 @@ body{
 .box{
     -moz-border-radius: 1em 1em 1em 1em;
     -webkit-border-radius: 1em 1em 1em 1em;
-    -khtml-border-radius: 1em 1em 1em 1em; 
+    -khtml-border-radius: 1em 1em 1em 1em;
     padding: 1em 1em 1em 1em;
-}
-
-.pink-box{
-    background-color: white;
-    -moz-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -webkit-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -khtml-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    padding: .4em .4em .4em .4em;
-}
-
-.pink-box:hover{
-    background-color: #ff347c;
-}
-
-.orange-box{
-    background-color: white;
-    -moz-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -webkit-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -khtml-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    padding: .4em .4em .4em .4em;
-}
-
-.orange-box:hover{
-    background-color: #ffb734;
-}
-
-.teal-box{
-    background-color: white;
-    -moz-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -webkit-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -khtml-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    padding: .4em .4em .4em .4em;
-}
-
-.teal-box:hover{
-    background-color: #34ffb7;
-}
-
-.blue-box{
-    background-color: white;
-    -moz-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -webkit-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    -khtml-border-radius: 1.5em 1.5em 1.5em 1.5em;
-    border-radius: 1.5em 1.5em 1.5em 1.5em;
-    padding: .4em .4em .4em .4em;
-}
-
-.blue-box:hover{
-    background-color: #347cff;
 }
 
 .inbox{
     -moz-border-radius: 1em 1em 1em 1em;
     -webkit-border-radius: 1em 1em 1em 1em;
-    -khtml-border-radius: 1em 1em 1em 1em; 
+    -khtml-border-radius: 1em 1em 1em 1em;
     border-radius: 1em 1em 1em 1em;
     background-color: white;
     padding: 1em 1em 1em 1em;
@@ -111,33 +59,6 @@ body{
     color:white;
 }
 
-.orange-title{
-    background-color:#e67400;
-    padding: 1em 1em 1em 1em;
-}
-
-.blue-title{
-    background-color:#0072e6;
-    padding: 1em 1em 1em 1em;
-}
-
-.navbar-custom {
-    background-color:#fff;
-    color:#000;
-    border-radius:0;
-}
-
-.navbar-custom .navbar-nav > li > a {
-    color:#000;
-}
-.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #000;
-    background-color:transparent;
-}
-.navbar-custom .navbar-brand {
-    color:#000;
-}
-
 .white-row{
     background-color: white;
 }
@@ -145,8 +66,4 @@ body{
 .black-row{
     background-color: black;
     height:10px;
-}
-
-.icon-bar {
-   background-color:#000;
 }
