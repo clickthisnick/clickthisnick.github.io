@@ -202,7 +202,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $black;
+  color: $lightGray;
   font-size: 16px;
 
   @include mobile {
@@ -257,6 +257,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
+    background: $white;
     font-size: 22px;
     font-style: italic;
   }
@@ -272,7 +273,7 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: $black;
 }
 
