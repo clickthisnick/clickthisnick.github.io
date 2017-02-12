@@ -283,6 +283,14 @@ footer {
   text-align: center;
 }
 
+/*768*/
+@media screen and (min-width:1000px){
+    html {
+        background: #ccc;
+        padding: 1em 2em 1em 2em;
+    }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
