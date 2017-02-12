@@ -14,10 +14,10 @@ permalink: /projects/
 
 <html>
 <body>
-  <div id="myTabContent" class="tab-content home-gradient">
+  <div class="tab-content home-gradient">
 
   <!-- Projects -->
-  <div class="tab-pane" id="projects">
+  <div class="tab-pane">
     <div class="row">
       <div class="col-lg-12">
         <h1 class="text-center title">I Create Software Solutions To Solve Real World Problems</h1>
