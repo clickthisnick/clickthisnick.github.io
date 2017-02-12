@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title:
 permalink: /projects/
 ---
 
@@ -10,9 +10,9 @@ permalink: /projects/
 
 <html>
   <body>
-    <div class="row">
+    <div class="row text-center">
       <div class="col-lg-12 text-center">
-      <h1 class="title">
+      <h1 class="title text-center">
         I Create Software Solutions To Solve Real World Problems
       </h1>
       </div>
