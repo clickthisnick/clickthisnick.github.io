@@ -35,6 +35,36 @@ body {
   background-color: black;
 }
 
+.box{
+    -moz-border-radius: 1em 1em 1em 1em;
+    -webkit-border-radius: 1em 1em 1em 1em;
+    -khtml-border-radius: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+}
+
+.inbox{
+    -moz-border-radius: 1em 1em 1em 1em;
+    -webkit-border-radius: 1em 1em 1em 1em;
+    -khtml-border-radius: 1em 1em 1em 1em;
+    border-radius: 1em 1em 1em 1em;
+    background-color: white;
+    padding: 1em 1em 1em 1em;
+}
+
+.title{
+    font-family: 'Arvo', serif;
+    color:white;
+}
+
+.white-row{
+    background-color: white;
+}
+
+.black-row{
+    background-color: black;
+    height:10px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 860px;
