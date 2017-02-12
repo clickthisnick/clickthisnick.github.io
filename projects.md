@@ -34,7 +34,7 @@ permalink: /projects/
 
 
         <h4>Dynamic Release Checklist</h4>
-        <img src="images/dynamic-release-checklist.png" class="img-responsive">
+        <img src="../images/dynamic-release-checklist.png" class="img-responsive">
         A release checklist that uses questions to filter out tasks needed to be performed so only relevant tasks are shown. Written in AngularJS and tested with Jamine.
         <hr>
       </div>
