@@ -5,7 +5,6 @@ permalink: /projects/
 ---
 
 <link rel="stylesheet" type="text/css" href="lib/css/bootswatch.css">
-<link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="lib/css/github-ribbon.css">
 <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
