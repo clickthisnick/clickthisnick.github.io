@@ -7,6 +7,11 @@
 
 @import "reset";
 @import "variables";
+@import url(http://fonts.googleapis.com/css?family=Arvo|Open+Sans:400italic,700italic,400,700);
+
+// Font Variables
+$arvo: 'Arvo', serif;
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -19,7 +24,7 @@ html {
 
 body {
 	background: $black;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $arvo;
   color: $darkGray;
 
   -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
@@ -73,7 +78,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $arvo;
   color: $white;
   font-weight: bold;
 
@@ -236,7 +241,7 @@ img {
   margin: 0;
   color: $white;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $arvo;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -255,7 +260,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $arvo;
   font-size: 18px;
 
   @include mobile {
