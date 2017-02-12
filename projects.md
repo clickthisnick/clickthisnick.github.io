@@ -126,5 +126,5 @@ permalink: /projects/
 <!-- Projects -->
 
 <script src="lib/js/jquery.js"></script>
-<script src="lib/js/bootstrap.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
 <script src="lib/js/jquery.matchheight.js" type="text/javascript"></script>
