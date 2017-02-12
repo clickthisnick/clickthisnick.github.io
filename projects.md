@@ -4,10 +4,10 @@ title: Projects
 permalink: /projects/
 ---
 
-<link rel="stylesheet" type="text/css" href="lib/css/bootswatch.css">
-<link rel="stylesheet" type="text/css" href="lib/css/clickthisnick.css">
-<link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="lib/css/github-ribbon.css">
+<link rel="stylesheet" type="text/css" href="../lib/css/bootswatch.css">
+<link rel="stylesheet" type="text/css" href="../lib/css/clickthisnick.css">
+<link rel="stylesheet" type="text/css" href="../lib/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../lib/css/github-ribbon.css">
 <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
 ### Projects
@@ -50,7 +50,7 @@ permalink: /projects/
         <div class="text-left">
           <h4>Workout Tracker</h4>
         </div>
-        <img src="images/workout-tracker.png" class="img-responsive center-block">
+        <img src="../images/workout-tracker.png" class="img-responsive center-block">
         Currently a work in progress, workout tracker helps a person record their lifting numbers without the use of paper or pencil. Written in AngularJS, mobile responsive and easy to use.
         <hr>
       </div>
@@ -69,7 +69,7 @@ permalink: /projects/
         </div>
 
         <h4>CraigLister</h4>
-        <img src="images/craiglister.png" class="img-responsive">
+        <img src="../images/craiglister.png" class="img-responsive">
         Python script using Selenium to navigate the UI and post items on craigslist every 3 days. Uses the Gmail Python library to accept Terms and Conditions, fully automating the posting of CraigList ads.
         <hr>
       </div>
@@ -87,7 +87,7 @@ permalink: /projects/
         <div class="text-left">
           <h4>Intinerary</h4>
         </div>
-        <img src="images/itinerary.png" class="img-responsive center-block" width=60%>
+        <img src="../images/itinerary.png" class="img-responsive center-block" width=60%>
         An intinerary creator. Never be late to an event and never forget something again! Written in KnockoutJS
         <hr>
       </div>
@@ -101,7 +101,7 @@ permalink: /projects/
        <div class="text-left">
         <h4>ISU Admirers</h4>
       </div>
-      <img src="images/isuadmirerers.png" class="img-responsive center-block">
+      <img src="../images/isuadmirerers.png" class="img-responsive center-block">
       Twitter account amassing 20k followers. Users can submit tweets anonymously to the twitter account via a website I built. Tweets submitted with the LAMP stack and parsed/posted to the Twitter API with Python.
       <hr>
     </div>
@@ -112,7 +112,7 @@ permalink: /projects/
       <div class="text-left">
         <h4>Snake Password</h4>
       </div>
-      <img src="images/snake.png" class="img-responsive center-block">
+      <img src="../images/snake.png" class="img-responsive center-block">
       JavaScript password generator. Builds pseudo-random passwords where the next character in the password is next to the previous character.
       <hr>
     </div>
