@@ -10,33 +10,40 @@ permalink: /projects/
 <link rel="stylesheet" type="text/css" href="lib/css/github-ribbon.css">
 <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 
-### Projects
-
 <html>
-<body>
-  <div class="tab-content home-gradient">
+  <body>
+    <div class="tab-content">
 
-  <!-- Projects -->
-  <div class="tab-pane">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="text-center title">I Create Software Solutions To Solve Real World Problems</h1>
-      </div>
-    </div>
+    <!-- Projects -->
+      <div class="tab-pane">
 
-    <div class="row white-row">
-      <div class="col-sm-6">
-        <div class="github-fork-ribbon-wrapper right">
-          <div class="github-fork-ribbon">
-            <a href="https://github.com/clickthisnick/dynamic-release-checklist" target="_blank">Fork me on GitHub</a>
+        <div class="row">
+          <div class="col-lg-12">
+          <h1 class="text-center title">I Create Software Solutions To Solve Real World Problems</h1>
           </div>
         </div>
 
+        <div class="row white-row">
+          <div class="col-sm-6">
+            <div class="github-fork-ribbon-wrapper right">
+              <div class="github-fork-ribbon">
+              <a href="https://github.com/clickthisnick/dynamic-release-checklist" target="_blank">Fork me on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
         <h4>Dynamic Release Checklist</h4>
         <img src="../images/dynamic-release-checklist.png" class="img-responsive">
         A release checklist that uses questions to filter out tasks needed to be performed so only relevant tasks are shown. Written in AngularJS and tested with Jamine.
         <hr>
+      </div>
       </div>
 
   <div class="col-xs-12 row black-row visible-xs-block"></div>
@@ -128,3 +135,4 @@ permalink: /projects/
 <script src="lib/js/jquery.js"></script>
 <script src="lib/js/bootstrap.min.js"></script>
 <script src="lib/js/jquery.matchheight.js" type="text/javascript"></script>
+-->
