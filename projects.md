@@ -5,7 +5,6 @@ permalink: /projects/
 ---
 
 <link rel="stylesheet" type="text/css" href="lib/css/bootswatch.css">
-<link rel="stylesheet" type="text/css" href="lib/css/clickthisnick.css">
 <link rel="stylesheet" type="text/css" href="lib/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="lib/css/github-ribbon.css">
 <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
@@ -13,7 +12,7 @@ permalink: /projects/
 <html>
   <body>
     <div class="row">
-      <div class="col-lg-12 text-center ">
+      <div class="col-lg-12 text-center">
       <h1 class="title">
         I Create Software Solutions To Solve Real World Problems
       </h1>
