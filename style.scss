@@ -1,12 +1,9 @@
----
----
-
 //
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
+@import "_sass/reset";
+@import "_sass/variables";
 @import url(http://fonts.googleapis.com/css?family=Arvo|Open+Sans:400italic,700italic,400,700);
 
 // Font Variables
@@ -340,5 +337,5 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+@import "_sass/highlights";
+@import "_sass/svg-icons";
