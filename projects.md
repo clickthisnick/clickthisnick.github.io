@@ -14,7 +14,7 @@ permalink: /projects/
   </h1>
 </div>
 
-<div class="row white-row">
+<div class="row white-row" style="padding:5px;">
 
   <div class="col-sm-6">
     <h4>Dynamic Release Checklist</h4>
