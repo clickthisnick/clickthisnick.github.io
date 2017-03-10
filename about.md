@@ -3,12 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
 
-Software Developer Engineer In Test At Honest Buildings NYC
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+<p>Software Developer Engineer In Test At Honest Buildings NYC</p>
 
 ### Contact me
 
