@@ -1,3 +1,4 @@
 brew install ruby
 gem install bundler
-bundle install
+bundle install --path ~/.gem
+bundle exec jekyll serve --watch

@@ -5,9 +5,11 @@
 @import "_sass/reset";
 @import "_sass/variables";
 @import url(http://fonts.googleapis.com/css?family=Arvo|Open+Sans:400italic,700italic,400,700);
+// @import url(https://fonts.googleapis.com/css?family=News+Cycle,400,700);
 
 // Font Variables
 $arvo: 'Arvo', serif;
+$news: 'News Cycle', 'Arial Narrow Bold', sans-serif;
 
 // Syntax highlighting @import is at the bottom of this file
 
@@ -21,7 +23,7 @@ html {
 
 body {
 	background: $black;
-  font: 18px/1.4 $arvo;
+  font: 18px/1.4 $news;
   color: $darkGray;
 
   -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
@@ -37,6 +39,19 @@ body {
   background-color: black;
 }
 
+.post-title {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.date-padding {
+  padding-bottom: 1em;
+}
+
+.black-title {
+  color: $black;
+}
+
 .box{
     -moz-border-radius: 1em 1em 1em 1em;
     -webkit-border-radius: 1em 1em 1em 1em;
@@ -50,16 +65,37 @@ body {
     -khtml-border-radius: 1em 1em 1em 1em;
     border-radius: 1em 1em 1em 1em;
     background-color: white;
-    padding: 1em 1em 1em 1em;
+    padding: .5em 1em 1em 1em;
 }
 
 .title{
-    font-family: 'Arvo', serif;
+    font-family: $arvo;
     color:white;
+    background-color: black;
+    font-size: 40px;
 }
 
 .white-row{
+    margin: 0 auto;
     background-color: white;
+    -webkit-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+    xbox-shadow: 0px 0px 40px 5px rgba(0,0,0,0.6);
+    -moz-border-radius: 1em 1em 1em 1em;
+    -webkit-border-radius: 1em 1em 1em 1em;
+    -khtml-border-radius: 1em 1em 1em 1em;
+    border-radius: 1em 1em 1em 1em;
+}
+
+.white-background {
+  background-color: white
+}
+
+.white-row > div {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
 }
 
 .black-row{
@@ -68,14 +104,13 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 0 10px;
+  padding-top: -10px;
+  max-width: 920;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $arvo;
+  font-family: $news;
   color: $white;
   font-weight: bold;
 
@@ -105,11 +140,17 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
 }
 
-p {
-  margin: 15px 0;
+.skills-title {
+  color: $black;
+  font-size: 22px;
+}
+
+.skills {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: $gray;
 }
 
 a {
@@ -195,7 +236,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .masthead {
@@ -280,10 +321,6 @@ nav {
     }
   }
 }
-
-//
-// .main
-//
 
 .posts > .post {
   padding-bottom: 2em;

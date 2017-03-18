@@ -1,12 +1,16 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: default
+title:
+permalink: /contact/
 ---
-<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
 
-<p>Software Developer Engineer In Test At Honest Buildings NYC</p>
 
-### Contact me
-
-[admin@clickthisnick.com](mailto:admin@clickthisnick.com)
+<article class="white-row  date-padding">
+  <h1 class="black-title post-title">Contact</h1>
+  <div class="entry">
+    <a href="mailto:admin@clickthisnick.com">admin@clickthisnick.com</a>
+    <br>
+    <br>
+      <a href="{{ site.baseurl }}/resources/Nicholas.Smith.Resume.pdf" download class="btn btn-success btn-lg">Grab My Resume</a>
+  </div>
+</article>

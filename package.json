@@ -4,7 +4,8 @@
   "description": "Githooks for projects",
   "main": "index.js",
   "scripts": {
-    "compile-css": "sass style.scss style.css;"
+    "compile-css": "sass style.scss style.css",
+    "compile-css-watch": "sass --watch style.scss:style.css"
   },
   "repository": {
     "type": "git",
