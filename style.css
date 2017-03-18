@@ -164,6 +164,11 @@ h4 {
   font-size: 15px;
   color: #666; }
 
+.blog-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #000; }
+
 a {
   color: #4183C4;
   text-decoration: none;
