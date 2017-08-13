@@ -17,7 +17,7 @@ permalink: /projects/
       <img src="../resources/projects/dynamic-release-checklist.png" class="img-responsive center-block">
       <br>
       <p>
-        A release checklist that uses questions to filter out tasks needed to be performed so only relevant tasks are shown. Written in AngularJS and tested with Jamine.
+        A release checklist that uses questions to filter out tasks needed to be performed so only relevant tasks are shown. Written in AngularJS and tested with Jasmine.
       </p>
       <hr>
     </div>
@@ -47,7 +47,7 @@ permalink: /projects/
       <img src="../resources/projects/itinerary.png" class="img-responsive">
       <br>
       <p>
-        An intinerary creator. Never be late to an event and never forget something again! Written in KnockoutJS
+        An itinerary creator. Never be late to an event and never forget something again! Written in KnockoutJS
       </p>
       <hr>
     </div>

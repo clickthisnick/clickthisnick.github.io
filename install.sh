@@ -1,3 +1,5 @@
+#!/bin/bash
+
 brew install ruby
 gem install bundler
 bundle install --path ~/.gem
