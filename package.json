@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile-css": "node-sass style.scss > style.css",
-    "prestart": "npm run compile-css",
+    "preminify-css": "npm run compile-css",
+    "uglify-css": "node_modules/uglifycss/uglifycss style.css > style.min.css",
+    "prestart": "npm run uglify-css",
     "start": "bundle exec jekyll serve --watch"
   },
   "repository": {
@@ -21,6 +23,7 @@
   "dependencies": {
     "git-hooks": "^1.1.8",
     "lodash": "^4.17.4",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "uglifycss": "0.0.27"
   }
 }
