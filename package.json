@@ -4,8 +4,9 @@
   "description": "Githooks for projects",
   "main": "index.js",
   "scripts": {
-    "compile-css": "sass style.scss style.css",
-    "compile-css-watch": "sass --watch style.scss:style.css"
+    "compile-css": "node-sass style.scss > style.css",
+    "prestart": "npm run compile-css",
+    "start": "bundle exec jekyll serve --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,6 @@
   "dependencies": {
     "git-hooks": "^1.1.8",
     "lodash": "^4.17.4",
-    "sass": "^1.0.0-beta.2"
+    "node-sass": "^4.5.3"
   }
 }

@@ -66,6 +66,19 @@ body {
     border-radius: 1em 1em 1em 1em;
     background-color: white;
     padding: .5em 1em 1em 1em;
+    margin: .5em 0em 2em 0em;
+
+    @media (min-width: 1200px) {
+        height: 250px;
+    }
+
+    @media (min-width: 960px) and (max-width: 1199px) {
+        height: 190px;
+    }
+
+    @media (min-width: 775px) and (max-width: 959px) {
+        height: 215px;
+    }
 }
 
 .title{
@@ -73,6 +86,7 @@ body {
     color:white;
     background-color: black;
     font-size: 40px;
+    text-align: center;
 }
 
 .white-row{
@@ -143,6 +157,7 @@ h4 {
 }
 
 .skills-title {
+  text-align: center;
   color: $black;
   font-size: 22px;
 }
