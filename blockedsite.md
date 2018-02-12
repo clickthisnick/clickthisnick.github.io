@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 title:
 permalink: /blockedsite/
 ---
@@ -9,24 +9,23 @@ permalink: /blockedsite/
   body, html {
     height: 100%;
     display: grid;
-    background-color: black;
+    background-color: gray;
     color: white;
   }
 
-  .center {
+  <!-- .center {
     margin: auto;
     text-align: center;
     width: 50%;
-    border: 3px solid green;
+    border: 3px solid gray;
     padding: 10px;
-  }
+  } -->
 
 </style>
 
 <body>
 
   <div class="center">
-    <h2> Site Blocked! </h2>
     <h1 id="todo"></h1>
   </div>
 
