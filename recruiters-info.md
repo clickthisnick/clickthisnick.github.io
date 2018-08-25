@@ -1,7 +1,7 @@
 ---
 layout: default
 title:
-permalink: /recruiters-info/
+permalink: /hyREOVPtbabaoyLOQbqaserONMvsRMlt/
 ---
 
 <div class="jumbotron">
@@ -18,9 +18,7 @@ permalink: /recruiters-info/
   <a href="{{ site.baseurl }}/resources/Nicholas.Smith.Resume.pdf" download class="btn btn-success btn-lg">Download My Resume</a>
 
   <b>
-I look forward to speaking with you.
+    I look forward to speaking with you.
 </b>
 
 </div>
-
-

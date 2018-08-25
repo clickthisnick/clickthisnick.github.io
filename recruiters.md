@@ -4,9 +4,21 @@ title:
 permalink: /recruiters/
 ---
 
+<!-- Email Template:
+
+Hi <name>,
+
+Thank you for reaching out. I'm always excited for challenging new opportunities. 
+
+Could you please submit this recruiter intake form, after submitting you will get access to my basic information and I will reach out to you to schedule an initial phone screen.
+https://www.clickthisnick.com/recruiters/
+
+I look forward to working with you,
+    - Nick -->
+
 <script type="text/javascript">
     function redirect() {
-        window.location='../recruiters-info/'
+        window.location='../hyREOVPtbabaoyLOQbqaserONMvsRMlt/'
     };
 </script>
 
@@ -51,6 +63,14 @@ permalink: /recruiters/
                 </td>
                 <td>
                     <input name="entry.1454004386" type="text" required/>
+                </td>
+            </tr>
+            <tr class="table-active">
+                <td>
+                    <label for="comfort">Generally, what are your office hours?</label>
+                </td>
+                <td>
+                    <input name="entry.1831281904" type="text" required/>
                 </td>
             </tr>
             <tr class="table-active">
