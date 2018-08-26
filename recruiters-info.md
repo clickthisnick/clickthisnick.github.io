@@ -15,7 +15,7 @@ permalink: /hyREOVPtbabaoyLOQbqaserONMvsRMlt/
 <br><br></b>
   <a href="{{ site.baseurl }}/resources/Nicholas.Smith.Resume.pdf" download class="btn btn-success btn-lg">Download My Resume</a>
 <br><br>
-    <b>You can schedule the initial phone screen below:</b>
+    <b>You can schedule the initial phone screen below: <br>Please take note of my best number in the instructions.</b>
     <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/clickthisnick" style="min-width:320px;height:580px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
