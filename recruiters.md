@@ -10,8 +10,11 @@ Hi <name>,
 
 Thank you for reaching out. I'm always excited for challenging new opportunities. 
 
-Could you please submit this recruiter intake form, after submitting you will get access to my basic information, resume, and the ability to schedule the initial phone screen using my calendar.
-https://www.clickthisnick.com/recruiters/
+To speed up the process, please book an initial phone screen with the link below:
+https://calendly.com/clickthisnick
+
+My resume can be downloaded from:
+https://www.clickthisnick.com/resources/Nicholas.Smith.Resume.pdf
 
 I look forward to working with you,
     - Nick -->
