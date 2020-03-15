@@ -23,7 +23,7 @@
   "dependencies": {
     "git-hooks": "^1.1.8",
     "imagemin-cli": "^4.0.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "node-sass": "^4.5.3",
     "uglifycss": "0.0.29"
   }
