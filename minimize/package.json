@@ -1,12 +1,12 @@
 {
-  "name": "githooks",
+  "name": "clickthisnick",
   "version": "1.0.0",
-  "description": "Githooks for projects",
+  "description": "Github hosted website",
   "main": "index.js",
   "scripts": {
     "compile-css": "node-sass style.scss > style.css",
     "preminify-css": "npm run compile-css",
-    "uglify-css": "node_modules/uglifycss/uglifycss style.css > style.min.css",
+    "uglify-css": "node_modules/uglifycss/uglifycss style.css > ../style.min.css",
     "prestart": "npm run uglify-css",
     "start": "bundle exec jekyll serve --watch"
   },
@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/clickthisnick/githooks#readme",
   "dependencies": {
-    "git-hooks": "^1.1.8",
     "imagemin-cli": "^4.0.0",
     "lodash": "^4.17.13",
     "node-sass": "^4.5.3",

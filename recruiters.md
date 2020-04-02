@@ -8,7 +8,7 @@ permalink: /recruiters/
 
 Hi <name>,
 
-Thank you for reaching out. I'm always excited for challenging new opportunities. 
+Thank you for reaching out. I'm always excited for challenging new opportunities.
 
 To speed up the process, please book an initial phone screen with the link below:
 https://calendly.com/clickthisnick
