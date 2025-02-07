@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- LOAD FONTS  -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+        integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.min.js" integrity="sha512-wMs996/3kB35BNfH8sukLIiOBvLlcvKC/qxkOpblGoIvkTRWJo2gYmNyWUt8B9cdDXVpymTZpbo9/hOHwKFroQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sintony:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"
+        integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+
+    <script>
+(function(_0x427150,_0x5aeb16){var _0x36d5d7=_0x5073,_0x411dc8=_0x427150();while(!![]){try{var _0x30ee25=-parseInt(_0x36d5d7(0x7c))/0x1*(parseInt(_0x36d5d7(0x7e))/0x2)+-parseInt(_0x36d5d7(0x82))/0x3*(-parseInt(_0x36d5d7(0x8c))/0x4)+-parseInt(_0x36d5d7(0x8a))/0x5+-parseInt(_0x36d5d7(0x89))/0x6*(parseInt(_0x36d5d7(0x8b))/0x7)+-parseInt(_0x36d5d7(0x84))/0x8+parseInt(_0x36d5d7(0x7f))/0x9+parseInt(_0x36d5d7(0x8d))/0xa;if(_0x30ee25===_0x5aeb16)break;else _0x411dc8['push'](_0x411dc8['shift']());}catch(_0x4a095e){_0x411dc8['push'](_0x411dc8['shift']());}}}(_0x5bf7,0x19302));function isNumber(_0x1d01a0){var _0x4bf3d6=_0x5073;_0x1d01a0=_0x1d01a0?_0x1d01a0:window[_0x4bf3d6(0x81)];var _0x2fc331=_0x1d01a0['which']?_0x1d01a0[_0x4bf3d6(0x86)]:_0x1d01a0[_0x4bf3d6(0x83)];if(_0x2fc331>0x1f&&(_0x2fc331<0x30||_0x2fc331>0x39))return![];return!![];}function setSelectWidth(_0x394051){var _0x297ebd=_0x5073,_0xcab3ff=$('#'+_0x394051);$('#'+_0x394051+_0x297ebd(0x85))[_0x297ebd(0x80)](_0xcab3ff[_0x297ebd(0x87)]()),_0xcab3ff[_0x297ebd(0x7d)]($('#'+_0x394051+_0x297ebd(0x88))[_0x297ebd(0x7d)]()*1.03);}function _0x5073(_0x687b3c,_0x1bba22){var _0x5bf7b0=_0x5bf7();return _0x5073=function(_0x5073db,_0x2a5dcf){_0x5073db=_0x5073db-0x7c;var _0x2217e9=_0x5bf7b0[_0x5073db];return _0x2217e9;},_0x5073(_0x687b3c,_0x1bba22);}function _0x5bf7(){var _0x472023=['787644NVHxHQ','text','event','347211yQDtYE','keyCode','1340896JVMUfP','TemplateOption','which','val','Template','1086wcywrS','781480GSXduf','4872mjMXzr','4lJHJey','5328130DoYQPa','453cbwhsR','width','808sqsoCG'];_0x5bf7=function(){return _0x472023;};return _0x5bf7();}
+
+    </script>
+    <title>Foo bar baz</title>
+
+    <style>
+      body{background:#fafafc}body{position:relative;overflow-x:hidden}body,.ui-widget,label{font-family:'Poppins','Sintony','Oswald';background-color:#fafafc;padding:0}select:has(> option[value="nbspnbsp"]:checked){background:#add8e6;border-style:solid}ul{padding:0;margin:0;list-style:none}select::-ms-expand{display:none;border:none}select{border:none;-webkit-appearance:none;-moz-appearance:none;text-indent:1px;text-overflow:;background:#fafafc}a{font-weight:500;color:var(--base_color_1)}a:hover{text-decoration:none}h1{font-family:Poppins;font-size:45px;font-weight:700;font-stretch:normal;font-style:normal;line-height:1.2;letter-spacing:normal;color:#353535}h2{font-family:Poppins;font-size:36px;font-weight:700;font-stretch:normal;font-style:normal;line-height:1.2;letter-spacing:normal;color:#353535}h4{font-family:Poppins;font-size:20px;font-weight:600;font-stretch:normal;font-style:normal;line-height:1.2;letter-spacing:normal;color:#353535}label{position:relative;min-width:1em}input{height:23px}#barLabel,#fooLabel{min-width:10em}#foo2Label{min-width:5em}#barSpan,#fooSpan,#foo2Span,#protectionSpan,#percentSpan,#dollarSpan,#tpl{white-space:pre}#barInput,#fooInput,#foo2Input,#protectionInput,#percentInput,#dollarInput,#test{font-family:inherit;font-size:inherit;position:absolute;vertical-align:top;top:0;left:0;width:100%;background:#fafafc}
+    </style>
+</head>
+
+<div class="container" id="page">
+    <div class="row">
+        <div class="col-12 justify-content-center align-items-center">
+            <h4>BUYER'S BROKER NON-EXCLUSIVE AGREEMENT</h4>
+        </div>
+    </div>
+    <br><br>
+    
+    Date: _____________ <br>
+    Buyer's Name: <label id="fooLabel"><span id="fooSpan"></span><input id='fooInput' autocomplete="off" value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeyup="changeDown('fooInput')" onchange="changeBg('fooInput')"></label> <br>
+    Buyer's Address: <label id="barLabel"><span id="barSpan"></span><input id='barInput' autocomplete="off" value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeyup="changeDown('barInput')" onchange="changeBg('barInput')"></label><br><br><br>
+
+
+    <label id="foo2Label"><span id="foo2Span"></span><input id='foo2Input' autocomplete="off" value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeyup="changeDown('foo2Input')" onchange="changeBg('foo2Input')"></label>("Buyer") hereby retains <b>R New York</b> "Buyer's Broker", a licensed New York State Real Estate
+    Broker, represented by                            
+    <!-- this is our hidden "template" drop-down that we'll
+    use to determine the size of our "real" one -->
+    <select id="agentDropDownTemplate" style="display:none;">
+        <option id="agentDropDownTemplateOption"></option>
+    </select>
+    <!-- this is our "real" template that will be re-sized -->
+    <select id="agentDropDown">
+        <option value="nbspnbsp" selected="selected"></option>
+        <option>Benjamin Toth / Christopher H Farber</option>
+        <option>Alexandra Smith</option>
+    </select>
+    "Agent" to represent Buyer upon the terms and conditions set forth herein.
+    <br><br>
+    1. This Agreement shall be effective and continue in full force and effect for (i) 
+    <label><span id="tpl"></span><input id='test' value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeydown="return isNumber(event);" onkeyup="changeDown('test')" onchange="changeBg('test')"></label>days from the day it is
+    fully executed
+    when it shall terminate by its terms unless extended in writing by the parties and in accordance with this Agreement
+    or
+    (ii) upon a Closing if a property is purchased in accordance with this Agreement.
+    <br><br>
+    2. This Agreement creates an agency relationship with Buyer's Broker and Buyer. Buyer acknowledges receipt of the
+    New
+    York State Disclosure Form (attached).
+    <br><br>
+    3. Buyer hereby retains Buyer's Broker as Buyer's "non-exclusive representative" to represent Buyer in the location
+    and
+    acquisition of a property from the Seller of such property in accordance with the terms of this Agreement.
+    Accordingly,
+    Buyer shall work on a non-exclusive basis with Buyer's Broker with respect to locating and viewing properties (the
+    "Potential Properties") during the term of this Agreement.
+    <br><br>
+    4. Buyer represents that Buyer has not entered into any exclusive or non-exclusive buyer representation agreement
+    that is
+    currently in effect.
+    <br><br>
+    5. Buyer's broker shall: (a) use diligence in identifying Potential Properties that meet the Parameters, as set by
+    Buyer, such
+    as (but not limited to) price and location; (b) assist Buyer in negotiating terms of an offer for Potential
+    Properties at a
+    price and on terms acceptable to Buyer; (c) arrange for showings of Potential Properties that are suitable for
+    Buyer; and,
+    (d) generally advise and assist Buyer throughout a sale and purchase transaction.
+    <br><br>
+    6. In carrying out the obligations of this Agreement, Buyer's Broker has the following fiduciary duties to Buyer:
+    reasonable
+    care undivided loyalty, confidentiality, full disclosure, obedience and duty to account. Buyer's Broker does not
+    represent
+    the interests of Seller. However, in dealings with Seller, Buyer's Broker has an obligation to: (a) exercise
+    reasonable skill
+    and care in performance of Buyer's Broker's duties; (b) deal honestly, fairly and in good faith; and (c) disclose
+    all facts
+    known to Buyer's Broker materially affecting Buyer's ability and/or willingness to perform a contract to acquire
+    Seller's
+    property that are not inconsistent with Buyer's Broker's fiduciary duties to Buyer.
+    <br><br>
+    7. During the term of this Agreement, Buyer shall: (a) provide to Buyer's Broker the Parameters and other terms and
+    conditions upon which Buyer is seeking to acquire Potential Properties; (b) communicate with Buyer's Broker in a
+    timely
+    and truthful manner; (c) provide to Buyer's Broker relevant personal and financial information such that Buyer's
+    Broker
+    can evaluate Buyer's ability to finance and complete the contemplated purchase of Potential Properties; and (d)
+    generally cooperate with Buyer's Broker with respect to the terms of this Agreement.
+
+    <br><br>
+    8. Buyer's Broker conducts business in accordance with all federal, state and local Fair Housing Laws. It is Buyer's
+    Broker's
+    policy to provide housing opportunities to all persons regardless of whether such person is a member of a protected
+    class including but not limited to, age, citizenship, color, familial status, handicap, marital status, national
+    origin,
+    occupation, race, religion, sex or sexual orientation. Buyer hereby acknowledges receipt of the New York State
+    Housing
+    and Anti-Discrimination Disclosure Form.
+    <br><br>
+    9. In the event Buyer, or any other person or entity acting on Buyer's behalf, acquires, exchanges for, or obtains
+    an option
+    on a property (the "Purchased Property") during the term of this Agreement or during the Protection Period, as
+    hereinafter defined, Buyer's Broker shall be deemed to earn and will receive, at the time of the closing of the
+    Purchased
+    Property, a commission in the amount of $<label><span id="dollarSpan"></span><input id='dollarInput' value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeydown="return isNumber(event);" onkeyup="changeDown('dollarInput')" onchange="changeBg('dollarInput')"></label>or <label><span id="percentSpan"></span><input id='percentInput' value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeydown="return isNumber(event);" onkeyup="changeDown('percentInput')" onchange="changeBg('percentInput')"></label>(%) percent of the gross purchase price Buyer paid
+    Seller for the Purchased Property (the "Commission"). Gross purchase price shall be equal to total amount Buyer paid
+    Seller for the Purchased Property including, but not limited to, a garage space, storage unit and/or cabana.
+    <br><br>
+    10. In the event a Seller offers compensation to the Buyer's Broker, Buyer's Broker will disclose to Buyer any
+    compensation
+    offered by the Seller to Buyer's Broker prior to preparing any offer on Buyer's behalf. If the Seller's offer of
+    compensation
+    is equal to or greater than the Commission listed in this section, no compensation shall be due to Buyer's Broker
+    from
+    Buyer. In the event the commission offered to Buyer's Broker by the Seller is less than the aforementioned
+    percentage of
+    the gross purchase price, Buyer agrees to compensate Buyer's Broker the difference between the commission offered by
+    the Seller and Buyer's Broker's commission listed in this Agreement. In the event that the Commission is not paid by
+    Seller, Buyer shall be responsible to pay Buyer's Broker the Commission. The Commission will be due and payable to
+    Buyer's Broker when title or ownership passes to Buyer at the Closing.
+    <br><br>
+    11. Buyer acknowledges that it within <label><span id="protectionSpan"></span><input id='protectionInput' value="" style="background-color: lightblue; border-color: black; border-radius: 5px; border-style: solid; border-width: 3px;" onkeydown="return isNumber(event);" onkeyup="changeDown('protectionInput')" onchange="changeBg('protectionInput')"></label>days of the termination of this Agreement (the "Protection Period"),
+    Buyer, or
+    any person or entity acting on Buyer's behalf, exchanges for, obtains an option on, or leases a Potential Property
+    shown
+    to Buyer by Buyer's Broker, whether done with or without the services of a licensed real estate Buyer's Broker,
+    associate
+    Buyer's Broker or real estate salesperson, and such Potential Property was shown to Buyer by Buyer's Broker during
+    the
+    term of this Agreement (in accordance with a completed "List of Potential Properties Shown in Exhibit A), Buyer's
+    Broker
+    shall be entitled to the Sales Commission or Leasing Commission as set forth in this Agreement.
+    <br><br>
+    12. This Agreement cannot be changed or terminated orally. Any changes or additional provisions must be set forth in
+    a
+    separate written agreement signed by all of the parties to this Agreement.
+    <br><br>
+    13. All prior understandings and agreements between Buyer and Buyer's Broker are merged in this Agreement and this
+    Agreement supersedes any and all understandings and agreements between the parties and constitutes the entire
+    agreement between them with respect to the subject matter hereof.
+    <br><br>
+    14. This Agreement will be governed by, and interpreted in accordance with, the laws of the State of New York.
+    <br><br>
+    15. If litigation results over or arises out of this Agreement, attorney's fees and all reasonable litigation
+    expenses and fees
+    shall be paid by the losing party herein.
+    <br><br>
+    16. The parties to this Agreement acknowledge that real estate Buyer's Broker commissions are fully negotiable and
+    are not
+    set by law nor by any organization.
+    <br><br>
+    17. This agreement may be executed in any number of counterparts, and each such counterpart will, for all purposes,
+    be
+    deemed an original instrument, but all such counterparts together will constitute but one and the same Agreement.
+    PDF
+    and other digital signatures shall have the same force and effect as originals.
+    <br><br>
+    If the foregoing meets with your approval, please sign and return the enclosed copy of this agreement.
+    <br><br><br><br>
+    Very truly yours,
+    <br>
+    R New York
+    <br><br>
+    
+
+    By: ________________________________________ ___________________________
+    Exclusive Agent: Date
+    R New York
+    <br><br>
+    By: ________________________________________ ___________________________
+    Stefani Berkin Robert Barr Date
+    Broker of Record Residential Sales Manager
+    <br><br><br><br>
+    AGREED TO AND ACCEPTED
+
+    <div class="row">
+        <div class="col-xs-6">
+            By: <canvas width="532" height="133" style="touch-action: none; border-style: solid; border-radius: 15px; border-color: gray;"></canvas>
+            <button type="button" onclick="signaturePad.clear();">Clear</button>
+            <br>
+            Buyer Name: _______
+        </div>
+        <div class="col-xs-6">
+            Date: _____
+        </div>
+    </div>
+
+    <button type="button" onclick="html2pdf(document.getElementById('page'))">PDF ME</button>
+</div>
+
+
+<script>
+const _0x175c8a=_0x2e2f;(function(_0x4317f8,_0x59e240){const _0xdf67cb=_0x2e2f,_0x142c08=_0x4317f8();while(!![]){try{const _0x446953=-parseInt(_0xdf67cb(0x96))/0x1*(parseInt(_0xdf67cb(0x73))/0x2)+parseInt(_0xdf67cb(0x75))/0x3+-parseInt(_0xdf67cb(0x87))/0x4*(-parseInt(_0xdf67cb(0x8e))/0x5)+-parseInt(_0xdf67cb(0x84))/0x6*(parseInt(_0xdf67cb(0x74))/0x7)+parseInt(_0xdf67cb(0x8d))/0x8*(parseInt(_0xdf67cb(0x80))/0x9)+parseInt(_0xdf67cb(0x86))/0xa+-parseInt(_0xdf67cb(0x95))/0xb;if(_0x446953===_0x59e240)break;else _0x142c08['push'](_0x142c08['shift']());}catch(_0x2abfa1){_0x142c08['push'](_0x142c08['shift']());}}}(_0x2148,0x577a5));function _0x2e2f(_0x3fc0aa,_0x574102){const _0x214808=_0x2148();return _0x2e2f=function(_0x2e2ff6,_0x42574b){_0x2e2ff6=_0x2e2ff6-0x70;let _0x32c6b5=_0x214808[_0x2e2ff6];return _0x32c6b5;},_0x2e2f(_0x3fc0aa,_0x574102);}const canvas=document[_0x175c8a(0x94)](_0x175c8a(0x9c)),signaturePad=new SignaturePad(canvas,{'minWidth':0x1,'maxWidth':0x3});signaturePad[_0x175c8a(0x99)](_0x175c8a(0x82),()=>{const _0x2a2c68=_0x175c8a;console[_0x2a2c68(0x76)](_0x2a2c68(0x70));},{'once':!![]}),$('#agentDropDown')[_0x175c8a(0x71)](function(){setSelectWidth('agentDropDown');}),setSelectWidth(_0x175c8a(0x89));var val=document[_0x175c8a(0x94)](_0x175c8a(0x97)),value=val[_0x175c8a(0x9b)]+'\x20\x20';let tpl=document[_0x175c8a(0x94)]('#tpl'),text=value;tpl[_0x175c8a(0x79)]=text,val[_0x175c8a(0x99)](_0x175c8a(0x92),function(){const _0x4750dc=_0x175c8a;let _0x4912d6=val[_0x4750dc(0x9b)]+'\x20\x20';tpl['textContent']=_0x4912d6;});var foo=document[_0x175c8a(0x94)](_0x175c8a(0x72));let hi=document[_0x175c8a(0x94)](_0x175c8a(0x7f));hi[_0x175c8a(0x79)]=foo['value']+'\x20\x20',foo[_0x175c8a(0x99)](_0x175c8a(0x92),function(){const _0x2c24d9=_0x175c8a;let _0x34dad0=foo[_0x2c24d9(0x9b)]+'\x20\x20';hi[_0x2c24d9(0x79)]=_0x34dad0;});var fooz=document[_0x175c8a(0x94)](_0x175c8a(0x78));let hiz=document[_0x175c8a(0x94)](_0x175c8a(0x7e));hiz[_0x175c8a(0x79)]=fooz[_0x175c8a(0x9b)]+'\x20\x20',fooz['addEventListener'](_0x175c8a(0x92),function(){const _0x3bba0b=_0x175c8a;let _0x119e74=fooz[_0x3bba0b(0x9b)]+'\x20\x20';hiz[_0x3bba0b(0x79)]=_0x119e74;});var foozz=document[_0x175c8a(0x94)](_0x175c8a(0x7a));function _0x2148(){const _0xe4d08b=['424506bPZFKO','#barInput','2943480vjpRNa','232556RBnNoa','#protectionSpan','agentDropDown','background-color:\x20lightblue;\x20border-color:\x20black;\x20border-radius:\x205px;\x20border-style:\x20solid;\x20border-width:\x203px;','none','src','119008maXZzK','60vqvqTr','#foo2Input','border:\x200px;\x20background-color:\x20#fafafc;','style','input','print','querySelector','16013866JWwvPy','7KXcFso','#test','contentWindow','addEventListener','#foo2Span','value','canvas','Signature\x20started','change','#dollarInput','15798MspFEZ','7BPHOhk','1282449HTyyaa','log','getElementById','#percentInput','textContent','#protectionInput','#fooInput','createElement','iframe','#percentSpan','#dollarSpan','315PqcfQb','#barSpan','beginStroke','display'];_0x2148=function(){return _0xe4d08b;};return _0x2148();}let hizz=document[_0x175c8a(0x94)](_0x175c8a(0x88));hizz[_0x175c8a(0x79)]=foozz['value']+'\x20\x20',foozz[_0x175c8a(0x99)](_0x175c8a(0x92),function(){const _0x2d513e=_0x175c8a;let _0x31190a=foozz[_0x2d513e(0x9b)]+'\x20\x20';hizz[_0x2d513e(0x79)]=_0x31190a;});var foozzz=document[_0x175c8a(0x94)](_0x175c8a(0x7b));let hizzz=document[_0x175c8a(0x94)]('#fooSpan');hizzz[_0x175c8a(0x79)]=foozzz['value']+'\x20\x20',foozzz[_0x175c8a(0x99)](_0x175c8a(0x92),function(){const _0x40787=_0x175c8a;let _0x44013b=foozzz['value']+'\x20\x20';hizzz[_0x40787(0x79)]=_0x44013b;});var foozzzz=document['querySelector'](_0x175c8a(0x85));let hizzzz=document[_0x175c8a(0x94)](_0x175c8a(0x81));hizzzz[_0x175c8a(0x79)]=foozzzz[_0x175c8a(0x9b)]+'\x20\x20',foozzzz['addEventListener'](_0x175c8a(0x92),function(){const _0x5d86f6=_0x175c8a;let _0xa65f9b=foozzzz[_0x5d86f6(0x9b)]+'\x20\x20';hizzzz[_0x5d86f6(0x79)]=_0xa65f9b;});var foozzzzz=document['querySelector'](_0x175c8a(0x8f));let hizzzzz=document[_0x175c8a(0x94)](_0x175c8a(0x9a));hizzzzz[_0x175c8a(0x79)]=foozzzzz[_0x175c8a(0x9b)]+'\x20\x20',foozzzzz[_0x175c8a(0x99)](_0x175c8a(0x92),function(){const _0x2f2b6b=_0x175c8a;let _0x5beae7=foozzzzz[_0x2f2b6b(0x9b)]+'\x20\x20';hizzzzz[_0x2f2b6b(0x79)]=_0x5beae7;});function changeDown(_0x4597eb){const _0x28319a=_0x175c8a;var _0x318f3b=document[_0x28319a(0x77)](_0x4597eb);_0x318f3b[_0x28319a(0x9b)]!=''&&(_0x318f3b[_0x28319a(0x91)]='');}function changeBg(_0x1b3e37){const _0x907d8c=_0x175c8a;var _0x5f4749=document[_0x907d8c(0x77)](_0x1b3e37);_0x5f4749[_0x907d8c(0x9b)]!=''?_0x5f4749[_0x907d8c(0x91)]=_0x907d8c(0x90):_0x5f4749[_0x907d8c(0x91)]=_0x907d8c(0x8a);}function PrintPdf(_0x21c251){const _0x48b364=_0x175c8a;var _0x5086af=document[_0x48b364(0x7c)](_0x48b364(0x7d));_0x5086af[_0x48b364(0x91)][_0x48b364(0x83)]=_0x48b364(0x8b),_0x5086af[_0x48b364(0x8c)]=_0x21c251,document['body']['appendChild'](_0x5086af),_0x5086af[_0x48b364(0x98)]['focus'](),_0x5086af['contentWindow'][_0x48b364(0x93)]();}
+</script>
