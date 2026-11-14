@@ -25,8 +25,8 @@ jobs:
         with:
           node-version: "22"
           cache: npm
-          cache-dependency-path: minimize/package-lock.json
+          cache-dependency-path: styles/package-lock.json
 
       - name: Compile styles
-        working-directory: minimize
+        working-directory: styles
         run: npm ci && npx sass style.scss /tmp/style.compiled.css --style=compressed --no-source-map

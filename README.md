@@ -29,10 +29,10 @@ GitHub Actions runs that build and the stylesheet compile on push and pull reque
 
 ## Styles
 
-`style.min.css` is the stylesheet the site serves. Sources are in `minimize/`.
+`style.min.css` is the stylesheet the site serves. GitHub Pages does not compile Sass, so that file stays committed. Sources are in `styles/`.
 
 ```bash
-cd minimize
+cd styles
 npm ci
 npm run build:css
 ```
