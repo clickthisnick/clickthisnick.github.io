@@ -1,0 +1,19 @@
+# Nick Smith
+
+Personal site of Nick Smith, a software developer. The working site is https://www.clickthisnick.com.
+
+## How to use the site
+
+- Home (/) introduces four ways Nick can help: release engineering, vulnerability testing, development, and knowledge transfer.
+- Blog (/blog/) lists posts. Each post has a "Read More" link and a "Back To Blog" link.
+- Projects (/projects/) shows project names, screenshots, and short descriptions.
+- Contact (/contact/) shows the email address admin@clickthisnick.com.
+- Recruiter intake (/recruiters/) is a form. Fill every required field and press Submit. The page announces that it is sending, posts the answers, then opens the follow-up page with a resume download and a Calendly link.
+- Feed: /feed.xml
+- Missing pages use /404.html, which links back home.
+
+The header has Home, Blog, Projects, and Contact. The current page is marked in the navigation. The footer has email, GitHub, LinkedIn, Stack Overflow, and RSS, each with a text name.
+
+## Domain
+
+Use https://www.clickthisnick.com. https://clickthisnick.com fails TLS because the apex DNS still points at retired GitHub Pages addresses, and the certificate only covers www.clickthisnick.com. The repository CNAME stays on www.
