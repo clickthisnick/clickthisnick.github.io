@@ -1,6 +1,6 @@
 ---
 layout:    page
-title:
+title: Blog
 permalink: /blog/
 ---
 
@@ -14,7 +14,7 @@ permalink: /blog/
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More<span class="visually-hidden">: {{ post.title }}</span></a>
     </article>
   {% endfor %}
 </div>

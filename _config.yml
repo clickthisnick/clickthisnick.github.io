@@ -18,13 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Nick Smith
+email: admin@clickthisnick.com
 name: Nick Smith
+author: Nick Smith
 description: Software Developer focused on releasing tested, secure, quality code quickly.
 avatar: https://www.gravatar.com/avatar/11a3de34ea23c7d2c3ce6a7563087814?s=64&d=identicon&r=PG&f=1
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://clickthisnick.com" # the base hostname & protocol for your site, e.g. http://example.com
+# www is the hostname with a valid GitHub Pages certificate. See README.
+url: "https://www.clickthisnick.com"
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
@@ -37,7 +39,7 @@ footer-links:
     instagram:
     linkedin: clickthisnick
     pinterest:
-    rss: # just type anything here for a working RSS icon
+    rss: true # just type anything here for a working RSS icon
     twitter:
     stackoverflow: users/4178623/clickthisnick
     youtube: # channel/<your_long_string> or user/<user-name>
@@ -56,14 +58,11 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - minimize/
+  - vendor/
+  - test/
+  - README.md
+  - node_modules/
+  - package.json
+  - package-lock.json
