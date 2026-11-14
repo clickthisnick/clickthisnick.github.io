@@ -195,7 +195,11 @@ class SiteTest < Minitest::Test
   end
 
   def test_tooling_is_not_published_and_llms_txt_is
-    refute File.exist?(File.join(SITE, "minimize/package.json"))
+    refute File.exist?(File.join(SITE, "styles/package.json"))
+    refute File.exist?(File.join(SITE, "styles/style.scss"))
+    refute File.exist?(File.join(SITE, "Gemfile.lock"))
+    refute File.exist?(File.join(SITE, "lib/js/bootstrap.min.js"))
+    refute File.exist?(File.join(SITE, "lib/css/github-ribbon.css"))
     refute File.exist?(File.join(SITE, "README.md"))
     guide = read_site("llms.txt")
     assert_includes guide, "https://www.clickthisnick.com"
