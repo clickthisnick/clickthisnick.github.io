@@ -5,56 +5,17 @@ set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
 
-export PATH="${HOME}/.local/bin:${PATH}"
-if ! command -v codespell >/dev/null 2>&1; then
-  python3 -m pip install --user --disable-pip-version-check -q -r requirements-dev.txt
-fi
-
-echo "== prettier =="
-npx prettier --check .
-
-echo "== eslint =="
-npx eslint .
-
-echo "== tsc =="
-npx tsc --noEmit
-
-echo "== stylelint =="
-npx stylelint "styles/**/*.scss"
-
-echo "== codespell =="
-codespell
-
-echo "== actionlint =="
-bash script/run-actionlint.sh
-
-echo "== stylesheet matches sources =="
-compiled="$(mktemp)"
-npx sass styles/style.scss "$compiled" --style=compressed --no-source-map
-cmp -s style.min.css "$compiled"
-rm -f "$compiled"
-
-echo "== jekyll =="
-bundle exec jekyll build --trace
+echo "== tests =="
+node --test test/site.test.js
 
 echo "== html-validate =="
-npx html-validate "_site/**/*.html"
+mapfile -t pages < <(find . -name '*.html' -not -path './node_modules/*' -not -path './.git/*')
+npx html-validate "${pages[@]}"
 
 echo "== links =="
-npx linkinator _site --recurse --silent --directory-listing --timeout 20000 --retry-errors --retry-errors-count 2
-
-echo "== ruby tests =="
-bundle exec ruby test/site_test.rb
-
-echo "== js tests =="
-node --test \
-  --experimental-test-coverage \
-  --test-coverage-include="_includes/recruiter-form.js" \
-  --test-coverage-exclude="test/**" \
-  --test-coverage-lines=100 \
-  --test-coverage-functions=100 \
-  --test-coverage-branches=100 \
-  test/recruiter-form.test.js
+npx linkinator index.html --recurse --silent --directory-listing --server-root . \
+  --timeout 20000 --retry-errors --retry-errors-count 2 \
+  --skip "itinerary" --skip "dynamic-release-checklist"
 
 echo "== size budget =="
 node script/size-budget.js

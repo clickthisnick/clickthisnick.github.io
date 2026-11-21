@@ -1,9 +1,5 @@
 .DS_Store
 node_modules
-.sass-cache
 _site
-npm-debug.log
-.jekyll-cache
-vendor/
-styles/style.css
 .cache/
+vendor/
