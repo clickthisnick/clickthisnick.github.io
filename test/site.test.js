@@ -27,6 +27,21 @@ function links(html, from) {
   return found;
 }
 
+test("pages do not call Google Fonts", function () {
+  const files = ["style.css", "index.html", "projects/index.html"];
+  for (const file of files) {
+    const text = read(file);
+    assert.equal(text.includes("fonts.googleapis.com"), false, file);
+    assert.equal(text.includes("fonts.gstatic.com"), false, file);
+  }
+  for (const face of ["body-gothic-400.woff2", "body-gothic-700.woff2", "title-slab-400.woff2"]) {
+    assert.ok(fs.existsSync(path.join(root, "fonts", face)), face);
+  }
+  for (const gone of ["poppins-400.woff2", "poppins-600.woff2", "poppins-700.woff2", "OFL-poppins.txt"]) {
+    assert.equal(fs.existsSync(path.join(root, "fonts", gone)), false, gone);
+  }
+});
+
 test("cname and nojekyll stay in place", function () {
   assert.equal(read("CNAME").trim(), "www.clickthisnick.com");
   assert.ok(fs.existsSync(path.join(root, ".nojekyll")));
@@ -45,16 +60,14 @@ test("pages keep their urls, names, and one stylesheet", function () {
     "hyREOVPtbabaoyLOQbqaserONMvsRMlt/index.html": ["Next Steps", "/resources/Nicholas.Smith.Resume.pdf", "calendly.com/clickthisnick"],
     "2017/03/14/Pi-Day.html": ["Happy Pi Day", "https://www.clickthisnick.com/2017/03/14/Pi-Day.html", "Back To Blog"],
     "404.html": ["Page not found", 'id="back-home" href="/"', "Page not found"],
-    "foo.html": ["Buyer's Broker", "https://www.clickthisnick.com/foo.html", "PDF ME"],
   };
+  assert.equal(fs.existsSync(path.join(root, "foo.html")), false);
   for (const [file, bits] of Object.entries(pages)) {
     const html = read(file);
     for (const bit of bits) assert.ok(html.includes(bit), file + " missing " + bit);
-    if (file !== "foo.html") {
-      assert.equal(html.includes("/style.min.css"), false, file);
-      assert.equal(html.includes("/lib/css/bootswatch.css"), false, file);
-      assert.ok(html.includes('href="/style.css"'), file);
-    }
+    assert.equal(html.includes("/style.min.css"), false, file);
+    assert.equal(html.includes("/lib/css/bootswatch.css"), false, file);
+    assert.ok(html.includes('href="/style.css"'), file);
   }
   const home = read("index.html");
   assert.ok(home.includes('id="nav-home" href="/" aria-current="page"'));
@@ -68,7 +81,8 @@ test("pages keep their urls, names, and one stylesheet", function () {
 test("project apps and local files resolve", function () {
   const projects = read("projects/index.html");
   assert.ok(projects.includes('href="/dynamic-release-checklist/"'));
-  assert.ok(projects.includes('href="/itinerary/"'));
+  assert.ok(projects.includes('href="/itinerary/">Itinerary</a>'));
+  assert.equal(projects.includes("Intinerary"), false);
   assert.equal(projects.match(/\/resources\/projects\//g).length, 6);
   const htmlFiles = [
     "index.html",
@@ -79,7 +93,6 @@ test("project apps and local files resolve", function () {
     "hyREOVPtbabaoyLOQbqaserONMvsRMlt/index.html",
     "2017/03/14/Pi-Day.html",
     "404.html",
-    "foo.html",
   ];
   const hostedApps = new Set(["/itinerary/", "/dynamic-release-checklist/"]);
   for (const file of htmlFiles) {
