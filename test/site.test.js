@@ -27,6 +27,18 @@ function links(html, from) {
   return found;
 }
 
+test("pages do not call Google Fonts", function () {
+  const files = ["style.css", "index.html", "foo.html", "projects/index.html"];
+  for (const file of files) {
+    const text = read(file);
+    assert.equal(text.includes("fonts.googleapis.com"), false, file);
+    assert.equal(text.includes("fonts.gstatic.com"), false, file);
+  }
+  for (const face of ["body-gothic-400.woff2", "body-gothic-700.woff2", "title-slab-400.woff2", "poppins-400.woff2"]) {
+    assert.ok(fs.existsSync(path.join(root, "fonts", face)), face);
+  }
+});
+
 test("cname and nojekyll stay in place", function () {
   assert.equal(read("CNAME").trim(), "www.clickthisnick.com");
   assert.ok(fs.existsSync(path.join(root, ".nojekyll")));
@@ -68,7 +80,8 @@ test("pages keep their urls, names, and one stylesheet", function () {
 test("project apps and local files resolve", function () {
   const projects = read("projects/index.html");
   assert.ok(projects.includes('href="/dynamic-release-checklist/"'));
-  assert.ok(projects.includes('href="/itinerary/"'));
+  assert.ok(projects.includes('href="/itinerary/">Itinerary</a>'));
+  assert.equal(projects.includes("Intinerary"), false);
   assert.equal(projects.match(/\/resources\/projects\//g).length, 6);
   const htmlFiles = [
     "index.html",
