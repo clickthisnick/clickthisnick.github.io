@@ -13,9 +13,21 @@ mapfile -t pages < <(find . -name '*.html' -not -path './node_modules/*' -not -p
 npx html-validate "${pages[@]}"
 
 echo "== links =="
-npx linkinator index.html --recurse --silent --directory-listing --server-root . \
-  --timeout 20000 --retry-errors --retry-errors-count 2 \
-  --skip "itinerary" --skip "dynamic-release-checklist"
+# LinkedIn rate-limits GitHub runners with 429. Retry, then accept a leftover 429.
+set +e
+link_output="$(npx linkinator index.html --recurse --silent --directory-listing --server-root . \
+  --timeout 20000 --retry --retry-errors --retry-errors-count 5 --retry-errors-jitter 4000 \
+  --skip "itinerary" --skip "dynamic-release-checklist" 2>&1)"
+link_status=$?
+set -e
+printf '%s\n' "$link_output"
+if [[ "$link_status" -ne 0 ]]; then
+  other="$(printf '%s\n' "$link_output" | grep -E '\[[0-9]{3}\] https?://' | grep -v '\[429\]' || true)"
+  if [[ -n "$other" || "$link_output" != *"[429]"* ]]; then
+    exit "$link_status"
+  fi
+  echo "warning: an external host returned 429 after retries; local links passed"
+fi
 
 echo "== size budget =="
 node script/size-budget.js
