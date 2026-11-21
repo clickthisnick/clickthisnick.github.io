@@ -5,7 +5,8 @@ Personal site for Nick Smith. GitHub Pages builds it with Jekyll from the `maste
 ## Requirements
 
 - Ruby 3.2 or 3.3, plus Bundler
-- Node.js 20 or newer, only when changing styles
+- Node.js 22
+- Python 3, for codespell (`pip install -r requirements-dev.txt` if it is not installed)
 
 ## Run locally
 
@@ -21,19 +22,18 @@ Restart the server after editing `_config.yml`. Jekyll does not reload that file
 ## Tests
 
 ```bash
-bundle exec jekyll build
-bundle exec ruby test/site_test.rb
+npm ci
+bundle install
+npm run check
 ```
 
-GitHub Actions runs that build and the stylesheet compile on push and pull request. The workflow checks the site. It does not replace the GitHub Pages publish step.
+That is the same command GitHub Actions runs on push and pull request. It does not replace the GitHub Pages publish step. `AGENTS.md` lists what the command covers.
 
 ## Styles
 
 `style.min.css` is the stylesheet the site serves. GitHub Pages does not compile Sass, so that file stays committed. Sources are in `styles/`.
 
 ```bash
-cd styles
-npm ci
 npm run build:css
 ```
 

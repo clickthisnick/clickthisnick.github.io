@@ -6,3 +6,4 @@ npm-debug.log
 .jekyll-cache
 vendor/
 styles/style.css
+.cache/

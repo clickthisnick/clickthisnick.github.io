@@ -1,5 +1,5 @@
 ---
-layout:    page
+layout: page
 title: Blog
 permalink: /blog/
 ---
@@ -16,5 +16,5 @@ permalink: /blog/
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More<span class="visually-hidden">: {{ post.title }}</span></a>
     </article>
-  {% endfor %}
+{% endfor %}
 </div>

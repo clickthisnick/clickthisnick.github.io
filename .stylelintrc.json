@@ -1,0 +1,10 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "ignoreFiles": ["styles/_sass/_svg-icons.scss"],
+  "rules": {
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "scss/comment-no-empty": null,
+    "selector-no-deprecated": null
+  }
+}

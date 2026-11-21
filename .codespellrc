@@ -1,0 +1,4 @@
+[codespell]
+skip = .git,vendor,node_modules,_site,.cache,style.min.css,lib,package-lock.json,Gemfile.lock,resources,foo.html,styles/_sass/_svg-icons.scss
+ignore-words = .codespell-ignore
+builtin = clear,rare,informal,usage,code,names

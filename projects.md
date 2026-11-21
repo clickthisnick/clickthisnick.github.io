@@ -3,6 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
+
   <div class="row">
   <div class="col-lg-12 text-center">
     <h1 class="title" id="projects-heading">
@@ -71,4 +72,5 @@ permalink: /projects/
       </p>
       <hr>
     </div>
+
   </div>

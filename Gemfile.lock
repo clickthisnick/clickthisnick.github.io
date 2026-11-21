@@ -286,7 +286,7 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 233)
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1)
