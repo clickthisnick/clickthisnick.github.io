@@ -1,0 +1,20 @@
+pre-commit:
+  commands:
+    prettier:
+      glob: "*.{js,md,yml,yaml,json,scss,html}"
+      exclude: "foo.html|style.min.css|styles/_sass/_svg-icons.scss"
+      run: npx prettier --check {staged_files}
+    eslint:
+      glob: "*.js"
+      run: npx eslint {staged_files}
+    stylelint:
+      glob: "*.scss"
+      exclude: "styles/_sass/_svg-icons.scss"
+      run: npx stylelint {staged_files}
+    typescript:
+      run: npx tsc --noEmit
+    spelling:
+      run: python3 -m codespell
+    actionlint:
+      glob: ".github/workflows/*.{yml,yaml}"
+      run: bash script/run-actionlint.sh

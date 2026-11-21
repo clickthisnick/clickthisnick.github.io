@@ -1,63 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Nick Smith
 email: admin@clickthisnick.com
 name: Nick Smith
 author: Nick Smith
 description: Software Developer focused on releasing tested, secure, quality code quickly.
 avatar: https://www.gravatar.com/avatar/11a3de34ea23c7d2c3ce6a7563087814?s=64&d=identicon&r=PG&f=1
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 # www is the hostname with a valid GitHub Pages certificate. See README.
 url: "https://www.clickthisnick.com"
-# twitter_username: jekyllrb
-# github_username:  jekyll
 
 footer-links:
-    dribbble:
-    email: admin@clickthisnick.com
-    facebook:
-    flickr:
-    github: clickthisnick
-    instagram:
-    linkedin: clickthisnick
-    pinterest:
-    rss: true # just type anything here for a working RSS icon
-    twitter:
-    stackoverflow: users/4178623/clickthisnick
-    youtube: # channel/<your_long_string> or user/<user-name>
-    googleplus: # anything in your profile username that comes after plus.google.com/
+  email: admin@clickthisnick.com
+  github: clickthisnick
+  linkedin: clickthisnick
+  rss: true
+  stackoverflow: users/4178623/clickthisnick
 
-# Build settings
+# minima keeps Pages from falling back to the Primer theme stylesheet.
 theme: minima
 plugins:
   - jekyll-feed
 
-# Setting exclude replaces Jekyll's defaults, so Gemfile stays listed.
+# Setting exclude replaces Jekyll's defaults, so the ignored paths stay listed.
 exclude:
+  - .cache/
+  - .sass-cache/
+  - .jekyll-cache/
+  - vendor/
+  - node_modules/
   - Gemfile
   - Gemfile.lock
-  - node_modules/
-  - vendor/
   - styles/
   - test/
+  - script/
   - README.md
+  - AGENTS.md
   - package.json
   - package-lock.json
+  - requirements-dev.txt
+  - eslint.config.js
+  - tsconfig.json
+  - lefthook.yml
+  - size-budget.json

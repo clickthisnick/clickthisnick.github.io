@@ -4,21 +4,6 @@ title: Recruiter Intake
 permalink: /recruiters/
 ---
 
-<!-- Email Template:
-
-Hi <name>,
-
-Thank you for reaching out. I'm always excited for challenging new opportunities.
-
-To speed up the process, please book an initial phone screen with the link below:
-https://calendly.com/clickthisnick
-
-My resume can be downloaded from:
-https://www.clickthisnick.com/resources/Nicholas.Smith.Resume.pdf
-
-I look forward to working with you,
-    - Nick -->
-
 <iframe name="hidden_iframe" id="hidden_iframe" title="Recruiter form response" hidden style="display:none;"></iframe>
 <div class="jumbotron">
     <h1 id="recruiter-heading">Recruiter Intake Form</h1>
@@ -86,44 +71,42 @@ I look forward to working with you,
     <noscript>
         <p>This page needs JavaScript to open the next step after a successful submit. The answers are still sent. If the page stays here, email <a href="mailto:admin@clickthisnick.com">admin@clickthisnick.com</a>.</p>
     </noscript>
+
 </form>
 </div>
 
 <script>
+{% include recruiter-form.js %}
 (function () {
   var form = document.getElementById("recruiter-form");
   var status = document.getElementById("recruiter-status");
   var frame = document.getElementById("hidden_iframe");
   var nextUrl = "{{ site.baseurl }}/hyREOVPtbabaoyLOQbqaserONMvsRMlt/";
-  var started = false;
-  var moved = false;
 
   function say(message) {
     if (status) status.textContent = message;
   }
 
-  function go() {
-    if (moved) return;
-    moved = true;
-    say("Information sent. Opening the next step.");
-    window.location.assign(nextUrl);
-  }
-
   if (!form) return;
 
+  var controller = createRecruiterController({
+    nextUrl: nextUrl,
+    say: say,
+    assign: function (url) { window.location.assign(url); },
+    schedule: function (fn, delay) { window.setTimeout(fn, delay); }
+  });
+
   form.addEventListener("invalid", function () {
-    say("Please complete the required fields before submitting.");
+    controller.onInvalid();
   }, true);
 
   form.addEventListener("submit", function () {
-    started = true;
-    say("Sending your information.");
-    window.setTimeout(go, 1500);
+    controller.onSubmit();
   });
 
   if (frame) {
     frame.addEventListener("load", function () {
-      if (started) go();
+      controller.onFrameLoad();
     });
   }
 })();

@@ -1,8 +1,10 @@
 source "https://rubygems.org"
 
-# Pin the same gem GitHub Pages uses for the legacy build (Jekyll 3.10.x).
+# Current github-pages gem (Jekyll 3.10). Pages' versions.json still listed 232
+# on 2026-11-21; 233 is the latest pages-gem and only updates plugins this site
+# does not render (seo-tag, redirect-from, remote-theme) plus the feed escape fix.
 # https://pages.github.com/versions.json
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "233", group: :jekyll_plugins
 
 # Ruby 3 does not ship webrick, which `jekyll serve` needs.
 gem "webrick", "~> 1.8"

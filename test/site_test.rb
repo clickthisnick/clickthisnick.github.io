@@ -195,16 +195,55 @@ class SiteTest < Minitest::Test
   end
 
   def test_tooling_is_not_published_and_llms_txt_is
-    refute File.exist?(File.join(SITE, "styles/package.json"))
-    refute File.exist?(File.join(SITE, "styles/style.scss"))
-    refute File.exist?(File.join(SITE, "Gemfile.lock"))
-    refute File.exist?(File.join(SITE, "lib/js/bootstrap.min.js"))
-    refute File.exist?(File.join(SITE, "lib/css/github-ribbon.css"))
-    refute File.exist?(File.join(SITE, "README.md"))
+    %w[
+      styles/package.json
+      styles/style.scss
+      Gemfile.lock
+      lib/js/bootstrap.min.js
+      lib/css/github-ribbon.css
+      README.md
+      AGENTS.md
+      package.json
+      eslint.config.js
+      script/check
+      assets/css/style.css
+    ].each do |path|
+      refute File.exist?(File.join(SITE, path)), "#{path} should not be published"
+    end
     guide = read_site("llms.txt")
     assert_includes guide, "https://www.clickthisnick.com"
     assert_includes guide, "/recruiters/"
     assert_includes guide, "/contact/"
+  end
+
+  def test_stylesheet_keeps_used_icons_and_drops_unused_ones
+    css = read_site("style.min.css")
+    %w[email github linkedin rss stackoverflow].each do |name|
+      assert_includes css, ".svg-icon.#{name}"
+    end
+    %w[dribbble facebook flickr instagram pinterest twitter youtube googleplus].each do |name|
+      refute_includes css, ".svg-icon.#{name}"
+    end
+    refute_includes css, "Open+Sans"
+    refute_includes css, "xbox-shadow"
+    refute_includes read_site("index.html"), "google-analytics.com"
+  end
+
+  def test_local_links_and_images_resolve
+    Dir.glob(File.join(SITE, "**/*.{html,xml}")).each do |file|
+      File.read(file).scan(/\b(?:href|src)="([^"]+)"/).flatten.each do |url|
+        path = url.split("#", 2).first.split("?", 2).first
+        next if path.nil? || path.empty?
+        next if path.start_with?("mailto:", "http:", "https:", "data:", "//")
+        target = if path.start_with?("/")
+          File.join(SITE, path.sub(%r{\A/}, ""))
+        else
+          File.expand_path(path, File.dirname(file))
+        end
+        candidates = [target, File.join(target, "index.html"), "#{target}.html"]
+        assert candidates.any? { |candidate| File.exist?(candidate) }, "#{file} links to missing #{url}"
+      end
+    end
   end
 
   def test_post_links_back_to_the_blog

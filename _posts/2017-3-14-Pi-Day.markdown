@@ -14,6 +14,7 @@ Previously I was blocking time wasting and malicious sites on my computer by edi
 ```
 
 Then running:
+
 ```
 node script.js | pbcopy
 ```
