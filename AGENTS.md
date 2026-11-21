@@ -15,13 +15,13 @@ npm run check
 
 - Keep it simple. One stylesheet, `style.css`. Duplicate the header and footer in each page rather than adding a build tool.
 - Don't add a dependency without a stated reason. html-validate checks markup. linkinator checks links.
-- No JavaScript unless that page already needs it (the recruiter redirect, the agreement page, and the Calendly embed).
+- No JavaScript unless that page already needs it (the recruiter redirect and the Calendly embed).
 - Keep archived content (`resources/`, including older resumes and `resources/404.jpg`).
 - Every bug fix gets a test.
 - Never raise `size-budget.json` except when a requested change adds files the site must serve. It is the served site size plus 1 KiB.
 - Do not request fonts from Google. The used faces are subset WOFF2 files in `fonts/`, with their OFL licenses. News Cycle and Arvo have reserved names, so the subsets are `Body Gothic` and `Title Slab`.
 - Don't make visible UI changes unless asked.
-- Keep existing URLs working: `/`, `/blog/`, `/projects/`, `/contact/`, `/recruiters/`, `/hyREOVPtbabaoyLOQbqaserONMvsRMlt/`, `/foo.html`, `/404.html`, `/feed.xml`, `/2017/03/14/Pi-Day.html`.
+- Keep existing URLs working: `/`, `/blog/`, `/projects/`, `/contact/`, `/recruiters/`, `/hyREOVPtbabaoyLOQbqaserONMvsRMlt/`, `/404.html`, `/feed.xml`, `/2017/03/14/Pi-Day.html`. `/foo.html` was removed on purpose.
 - `/itinerary/` and `/dynamic-release-checklist/` are GitHub Pages project sites from other repositories. Link to them. Do not add those directories here.
 
 ## CI
